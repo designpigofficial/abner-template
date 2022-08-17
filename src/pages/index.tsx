@@ -18,7 +18,6 @@ import { Footer } from '../components/Footer'
 
 const Index = () => (
   <>
-  <Navbar />
   <Container height="100vh">
     <Hero />
     <Main>
