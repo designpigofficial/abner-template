@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 import {
   Box,
   Stack,
@@ -11,8 +11,8 @@ import {
   ListItem,
   ListIcon,
   Button,
-} from '@chakra-ui/react';
-import { FaCheckCircle } from 'react-icons/fa';
+} from "@chakra-ui/react";
+import { FaCheckCircle } from "react-icons/fa";
 
 function PriceWrapper({ children }: { children: ReactNode }) {
   return (
@@ -20,9 +20,10 @@ function PriceWrapper({ children }: { children: ReactNode }) {
       mb={4}
       shadow="base"
       borderWidth="1px"
-      alignSelf={{ base: 'center', lg: 'flex-start' }}
-      borderColor={useColorModeValue('gray.200', 'gray.500')}
-      borderRadius={'xl'}>
+      alignSelf={{ base: "center", lg: "flex-start" }}
+      borderColor={useColorModeValue("gray.200", "gray.500")}
+      borderRadius={"xl"}
+    >
       {children}
     </Box>
   );
@@ -35,17 +36,18 @@ export default function PricingCards() {
         <Heading as="h1" fontSize="4xl">
           Plans that fit your need
         </Heading>
-        <Text fontSize="lg" color={'gray.500'}>
+        <Text fontSize="lg" color={"gray.500"}>
           Start with 14-day free trial. No credit card needed. Cancel at
           anytime.
         </Text>
       </VStack>
       <Stack
-        direction={{ base: 'column', md: 'row' }}
+        direction={{ base: "column", md: "row" }}
         textAlign="center"
         justify="center"
         spacing={{ base: 4, lg: 10 }}
-        py={10}>
+        py={10}
+      >
         <PriceWrapper>
           <Box py={4} px={12}>
             <Text fontWeight="500" fontSize="2xl">
@@ -64,9 +66,10 @@ export default function PricingCards() {
             </HStack>
           </Box>
           <VStack
-            bg={useColorModeValue('gray.50', 'gray.700')}
+            bg={useColorModeValue("gray.50", "gray.700")}
             py={4}
-            borderBottomRadius={'xl'}>
+            borderBottomRadius={"xl"}
+          >
             <List spacing={3} textAlign="start" px={12}>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
@@ -95,16 +98,18 @@ export default function PricingCards() {
               position="absolute"
               top="-16px"
               left="50%"
-              style={{ transform: 'translate(-50%)' }}>
+              style={{ transform: "translate(-50%)" }}
+            >
               <Text
                 textTransform="uppercase"
-                bg={useColorModeValue('red.300', 'red.700')}
+                bg={useColorModeValue("red.300", "red.700")}
                 px={3}
                 py={1}
-                color={useColorModeValue('gray.900', 'gray.300')}
+                color={useColorModeValue("gray.900", "gray.300")}
                 fontSize="sm"
                 fontWeight="600"
-                rounded="xl">
+                rounded="xl"
+              >
                 Most Popular
               </Text>
             </Box>
@@ -125,9 +130,10 @@ export default function PricingCards() {
               </HStack>
             </Box>
             <VStack
-              bg={useColorModeValue('gray.50', 'gray.700')}
+              bg={useColorModeValue("gray.50", "gray.700")}
               py={4}
-              borderBottomRadius={'xl'}>
+              borderBottomRadius={"xl"}
+            >
               <List spacing={3} textAlign="start" px={12}>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
@@ -176,9 +182,10 @@ export default function PricingCards() {
             </HStack>
           </Box>
           <VStack
-            bg={useColorModeValue('gray.50', 'gray.700')}
+            bg={useColorModeValue("gray.50", "gray.700")}
             py={4}
-            borderBottomRadius={'xl'}>
+            borderBottomRadius={"xl"}
+          >
             <List spacing={3} textAlign="start" px={12}>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
