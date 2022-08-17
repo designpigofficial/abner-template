@@ -1,7 +1,14 @@
 import { ChakraProvider } from '@chakra-ui/react'
 
-import theme from '../theme'
 import { AppProps } from 'next/app'
+
+import { extendTheme } from '@chakra-ui/react'
+
+const theme = extendTheme({
+  config: {
+    cssVarPrefix: 'ck',
+  },
+})
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

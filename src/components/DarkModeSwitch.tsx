@@ -7,7 +7,7 @@ export const DarkModeSwitch = () => {
   return (
     <IconButton
       position="fixed"
-      top={4}
+      top={10}
       right={4}
       icon={isDark ? <SunIcon /> : <MoonIcon />}
       aria-label="Toggle Theme"
